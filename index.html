@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Link to Google Fonts for Montserrat font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        /* Apply Montserrat font globally */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #B8B4D6;
+        }
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Center main sections vertically */
+        main section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        /* Project grid alignment */
+        #projects .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .project-card {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+        }
+        .project-card img {
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            width: 100%;
+            height: auto;
+        }
+        .project-card h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+        .project-card p {
+            font-size: 1rem;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-[#6e849e] to-[#6b7777]">
+
+    <!-- Header with Navbar -->
+    <header>
+        <div class="navbar px-32 bg-transparent fixed w-full z-10 top-0">
+            <div class="flex-1"></div>
+            <div class="flex-none">
+                <ul class="menu menu-horizontal px-1">
+                    <li class="text-lg font-bold">
+                        <a href="#home" id="home-link" class="text-black hover:text-white">Home</a>
+                    </li>
+                    <li class="text-lg font-bold">
+                        <a href="#projects" id="projects-link" class="text-black hover:text-white">Projects</a>
+                    </li>
+                    <li class="text-lg font-bold">
+                        <a href="#skills" id="skills-link" class="text-black hover:text-white">Skills</a>
+                    </li>
+                    <li class="text-lg font-bold">
+                        <a href="#education" id="education-link" class="text-black hover:text-white">Education</a>
+                    </li>
+                    <li class="text-lg font-bold">
+                        <a href="#contact" id="contact-link" class="text-black hover:text-white">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main content with sections -->
+    <main>
+        <!-- Section 1: Home -->
+        <section id="home">
+            <div class="flex items-center justify-center max-w-screen-xl w-full px-8">
+                <!-- Left section with image -->
+                <div class="flex-1 flex justify-center">
+                    <img src="./profile.jpg" 
+                         alt="Placeholder Image" 
+                         class="rounded-full shadow-lg">
+                </div>
+                <!-- Right section with text -->
+                <div class="flex-1 px-8 max-w-4xl">
+                    <h1 class="text-6xl font-bold mb-4 text-black">It's me, Charlotte</h1>
+                    <h2 class="text-3xl font-bold mb-4 text-black">I'm a UI/UX Designer</h2>
+                    <p class="text-lg text-black">
+                        I'm a passionate developer with a knack for creating intuitive and dynamic web experiences. 
+                        Explore my projects, skills, and education to see what I bring to the table. 
+                        Feel free to contact me for collaborations or opportunities!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Projects -->
+        <section id="projects" class="w-full min-h-screen flex items-center justify-center bg-transparent py-16">
+            <h1 class="text-4xl font-bold mb-8">Projects</h1>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4 w-full max-w-screen-xl">
+        <!-- Project Card 1 -->
+        <div class="relative rounded-lg overflow-hidden bg-white bg-opacity-30 backdrop-blur-lg shadow-xl p-6">
+            <img src="https://img.freepik.com/free-photo/mythical-dragon-beast-anime-style_23-2151112832.jpg" 
+                 alt="Project Image" 
+                 class="rounded-lg mb-4 w-full h-auto">
+            <h1 class="text-2xl font-bold text-white mb-2">Lorem Ipsum Dolor Sit Amet</h1>
+            <p class="text-lg text-white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="relative rounded-lg overflow-hidden bg-white bg-opacity-30 backdrop-blur-lg shadow-xl p-6">
+            <img src="https://img.freepik.com/free-photo/mythical-dragon-beast-anime-style_23-2151112832.jpg" 
+                 alt="Project Image" 
+                 class="rounded-lg mb-4 w-full h-auto">
+            <h1 class="text-2xl font-bold text-white mb-2">Lorem Ipsum Dolor Sit Amet</h1>
+            <p class="text-lg text-white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="relative rounded-lg overflow-hidden bg-white bg-opacity-30 backdrop-blur-lg shadow-xl p-6">
+            <img src="https://img.freepik.com/free-photo/mythical-dragon-beast-anime-style_23-2151112832.jpg" 
+                 alt="Project Image" 
+                 class="rounded-lg mb-4 w-full h-auto">
+            <h1 class="text-2xl font-bold text-white mb-2">Lorem Ipsum Dolor Sit Amet</h1>
+            <p class="text-lg text-white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+        </div>
+
+        <!-- Project Card 4 -->
+        <div class="relative rounded-lg overflow-hidden bg-white bg-opacity-30 backdrop-blur-lg shadow-xl p-6">
+            <img src="https://img.freepik.com/free-photo/mythical-dragon-beast-anime-style_23-2151112832.jpg" 
+                 alt="Project Image" 
+                 class="rounded-lg mb-4 w-full h-auto">
+            <h1 class="text-2xl font-bold text-white mb-2">Lorem Ipsum Dolor Sit Amet</h1>
+            <p class="text-lg text-white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+        </div>
+    </div>
+</section>
+
+        <!-- Section 3: Skills -->
+        <section id="skills">
+            <h1 class="text-4xl font-bold mb-8">Skills</h1>
+            <p>Details about my skills...</p>
+        </section>
+
+        <!-- Section 4: Education -->
+        <style>
+            /* Center and resize the table */
+            #education table {
+                margin: 1.5rem auto; /* Center horizontally and space vertically */
+                width: 90%; /* Make table larger */
+                max-width: 1000px; /* Set a limit for larger screens */
+                border-collapse: collapse; /* Merge borders */
+                font-size: 1.2rem; /* Increase font size */
+            }
+        
+            /* Add padding and borders */
+            #education th, #education td {
+                border: 1px solid #ccc;
+                padding: 1rem; /* Add space inside cells */
+                text-align: left;
+            }
+        
+            /* Style table header */
+            #education th {
+                background-color: #5b2872;
+                color: white;
+                font-weight: bold;
+            }
+        
+            /* Alternating row colors for readability */
+            /*#education tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }*/
+        
+            #education tr:hover {
+                background-color: #f1f1f1;
+            }
+        </style>
+        
+        <section id="education">
+            <h1 class="text-4xl font-bold mb-8">Education</h1>
+            <!--<h2 class="text-2xl font-bold">Courses</h2>-->
+            <table>
+                <tr>
+                    <th>Course</th>
+                    <th>School</th>
+                    <th>Year</th>
+                </tr>
+                <tr>
+                    <td>JHS: Cosmetology</td>
+                    <td>Sumuroy Agro-Industrial School</td>
+                    <td>2013-2017</td>
+                </tr>
+                <tr>
+                    <td>SHS: TVL Track-Cookery</td>
+                    <td>Sumuroy Agro-Industrial School</td>
+                    <td>2018-2020</td>
+                </tr>
+                <tr>
+                    <td>BS Information Technology</td>
+                    <td>Quezon City University</td>
+                    <td>2023-Currently</td>
+                </tr>
+            </table>
+            <h2 class="text-2xl font-bold">Certificates</h2>
+            <table>
+                <tr>
+                    <th>Certificate</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                </tr>
+                <tr>
+                    <td>CSC: Certificate of Eligibility</td>
+                    <td>Civil Service Commission</td>
+                    <td>2023</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Section 5: Contact -->
+        <section id="contact">
+            <h1 class="text-4xl font-bold mb-8">Contact</h1>
+            <p>Details about how to contact me...</p>
+        </section>
+    </main>
+
+    <script>
+        // Function to update the active link based on the section in view
+        function setActiveLink() {
+            const sections = document.querySelectorAll('section');
+            const links = document.querySelectorAll('a');
+
+            let currentSection = '';
+
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+                    currentSection = section.id;
+                }
+            });
+
+            links.forEach(link => link.classList.remove('text-white'));
+
+            const activeLink = document.querySelector(`a[href="#${currentSection}"]`);
+            if (activeLink) {
+                activeLink.classList.add('text-white');
+            }
+        }
+
+        window.addEventListener('load', setActiveLink);
+        window.addEventListener('scroll', setActiveLink);
+    </script>
+</body>
+</html>

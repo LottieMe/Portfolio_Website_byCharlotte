@@ -1,0 +1,40 @@
+# Node modules
+/node_modules/
+
+# Dependency directories
+/vendor/
+
+# Build directories
+/dist/
+/build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Tailwind build output
+/public/css/tailwind.css
+
+# IDE and editor configurations
+.idea/
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Yarn lock (if using Yarn)
+yarn.lock
+
+# npm lock file (for package-lock.json if you use npm)
+package-lock.json
+
+# Temporary files
+*.swp
+*.swo
+*.bak
